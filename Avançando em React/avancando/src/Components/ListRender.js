@@ -23,6 +23,7 @@ const ListRender = () => {
   return (
     <div>
         <ul>
+            {/*Ao mapear uma lista, cada item individual precisa de uma "key", o indice pode ser utilizado como key no entando pode causar problemas futuros se um item for adicionado ou removido*/}
             {list.map((item, i) => (
                 <li key={i}>{item}</li>
             ))}
